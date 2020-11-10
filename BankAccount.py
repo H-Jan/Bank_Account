@@ -3,7 +3,7 @@ import re
 #First is initializing class
 class BankAccount:
     def __init__(self, full_name, account_number, routing_number, balance):
-        self.balance = 0
+        self.balance = balance
         self.account_number = account_number
         self.routing_number = routing_number
         self.full_name = full_name
@@ -51,3 +51,14 @@ first_account = BankAccount("Hani Jandali", 99233421, 123456789, 100)
 first_account.deposit(100)
 first_account.withdraw(50)
 first_account.print_receipt()
+
+#2 
+rainy_day_account = BankAccount("Mistakes", 88372573, 897654321, 100000)
+rainy_day_account.add_interest()
+rainy_day_account.withdraw(90000000)
+
+#3
+bill_gates_account = BankAccount("Fat_Stacks", 78390344, 882233445, 900000000)
+bill_gates_account.withdraw(10)
+bill_gates_account.add_interest()
+bill_gates_account.print_receipt()
